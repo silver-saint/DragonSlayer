@@ -8,5 +8,5 @@ set_target_properties(DragonSlayer PROPERTIES LINKER_LANGUAGE CXX)
 if(WIN32)
 
 else()
-    target_link_libraries(DragonSlayer ncurses pthread)
+    target_link_libraries(DragonSlayer pthread)
 endif()
