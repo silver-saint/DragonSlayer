@@ -1,3 +1,6 @@
+Build/
+.vs/
+.idea/
 # Prerequisites
 *.d
 
