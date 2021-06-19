@@ -1,5 +1,4 @@
-#include <iostream>
-#include "Renderer.h"
+#include <Game.h>
 
 int main()
 {
