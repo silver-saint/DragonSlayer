@@ -1,19 +1,20 @@
 #pragma once
-#include <Core/Core.h>
-
-class Player {
+#include <iostream>
+class Player
+{
 public:
 	Player() = delete;
-	Player(const std::string& pname, int phealth, int pmana);
+	Player(const std::string& name, int health, int mana);
 	std::string getName();
 	int getHealth();
 	int getMana();
-	void setName(const std::string& pname);
-	void setHealth(int phealth);
-	void setMana(int pmana);
+	void setName(const std::string& name);
+	void setHealth(int health);
+	void setMana(int mana);
 	~Player() = default;
 private:
 	std::string name;
 	int health;
 	int mana;
+	int damage;
 };

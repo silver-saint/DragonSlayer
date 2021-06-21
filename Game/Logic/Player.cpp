@@ -1,9 +1,9 @@
-#include <Logic/Player.h>
+#include "Player.h"
 
-Player::Player(const std::string& pname, int phealth, int pmana) {
-	name = pname;
-	mana = pmana;
-	health = phealth;
+Player::Player(const std::string& name, int health, int mana) {
+	this->name = name;
+	this->mana = mana;
+	this->health = health;
 }
 
 std::string Player::getName()
@@ -21,16 +21,16 @@ int Player::getMana()
 	return mana;
 }
 
-void Player::setName(const std::string& pname)
+void Player::setName(const std::string& name)
 {
-	name = pname;
+	this->name = name;
 }
 
-void Player::setHealth(int phealth) {
-	health = phealth;
+void Player::setHealth(int health) {
+	this->health = health;
 }
 
-void Player::setMana(int pmana)
+void Player::setMana(int mana)
 {
-	mana = pmana;
+	this->mana = mana;
 }
