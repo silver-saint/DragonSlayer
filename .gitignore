@@ -1,4 +1,7 @@
 Build/
+build/
+cmake-build-release/
+cmake-build-debug/
 .vs/
 .idea/
 # Prerequisites
