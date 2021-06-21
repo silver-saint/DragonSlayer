@@ -1,12 +1,12 @@
 #pragma once
-class Renderer
-{
+
+class Renderer {
 public:
-	Renderer();
-	~Renderer() = default;
-	void startGame();
+    Renderer();
+    ~Renderer() = default;
+    void startGame();
 private:
-	void clear();
-
+    void clear();
+    static void input(bool& bOpen);
+    bool open = true;
 };
-
